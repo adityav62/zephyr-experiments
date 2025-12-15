@@ -1,0 +1,28 @@
+manifest:
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr
+      revision: 413b789deb391d3a37d06b463288a5fe765ee57e
+      import:
+        name-allowlist:
+        - cmsis_6
+        - mbedtls
+        - lvgl
+      
+        # Nordic
+        - hal_nordic
+      
+        # Raspberry Pi Pico
+        - hal_rpi_pico
+      
+        # Silicon Labs
+        - hal_silabs
+      
+        # STMicroelectronics
+        - hal_stm32
+      
+        # NXP
+        - hal_nxp
+      
+        # Optional - for Raspberry Pi Pico W
+        #- hal_infineon
